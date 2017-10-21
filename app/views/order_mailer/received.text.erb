@@ -1,0 +1,11 @@
+Dear <%= Order.name %>
+
+Thank you for your recent order from the pragprog store.
+
+You ordered the following items:
+
+<%= render @order.line_items %>
+
+<%= @greeting %>, find me in app/views/order_mailer/received.text.erb
+
+We'll send you separate e-mail when your order ships.
